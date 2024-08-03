@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #FFB6C1;
+    --black-text-color: rgb(0, 0, 0);
+    --pink-text-color: #FFB6C1;
+    --main-color: #ffffff;
+}
+
+body {
+    font-family: 'Kirang Haerang', cursive;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    height: 80px; /* Set height for the navbar */
+    background-color: var(--pink-text-color); /* Pink background color */
+    width: 100%; /* Full width */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's on top */
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.home-img img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.head-birth {
+    color: var(--pink-text-color);
+    align-items: center;
+    padding: 10px;
+}
+
+.head-birth .regular-size {
+    font-size: 80px;
+}
+
+.big-size {
+    font-size: 200px;
+    text-align: right;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%; /* Make the buttons take the full width of the container */
+    max-width: 300px; /* Optional: Set a max-width to control the button size */
+    padding: 2rem 4rem;
+    background: var(--pink-text-color);
+    box-shadow: 0 0 10px var(--pink-text-color);
+    border-radius: 3rem;
+    font-size: 3rem;
+    color: black;
+    border: transparent;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--pink-text-color);
+}
+
+.btn-group a:nth-of-type(2) {
+    background-color: var(--pink-text-color);
+    color: black;
+    border: 1px solid var(--pink-text-color);
+    box-shadow: 0 0 25px transparent;
+}
+
+.btn-group a:nth-of-type(2):hover {
+    box-shadow: 0 0 25px var(--pink-text-color);
+    background-color: var(--pink-text-color);
+    color: var(--bg-color);
+}
+
+.file-input {
+    display: none;
+}
+
+.btn-group1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(33.333% - 1rem); /* 3 items per row with gap */
+    box-sizing: border-box;
+}
+
+.section img {
+    height: 280px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Reduce padding */
+    background-color: var(--pink-text-color);
+    color: black;
+    border: none;
+    border-radius: 2rem; /* Smaller border radius */
+    font-size: 1.2rem; /* Smaller font size */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease;
+}
+
+.download-btn i {
+    margin-left: 0.3rem; /* Adjust space between text and icon */
+    font-size: 1.2rem; /* Smaller icon size */
+}
+
+.download-btn:hover {
+    background-color: #e55b8b; /* Adjust hover color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--input-bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: var(--pink-text-color);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--pink-text-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pink-text-color);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--pink-text-color);
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    resize: none; /* Prevent resizing for textarea */
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: var(--pink-text-color);
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e55b8b; /* Adjust hover color */
+}
+
+.messages {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--input-bg-color);
+    border-radius: 0.5rem;
+    min-height: 100px;
+    overflow-y: auto; /* Allow scrolling if messages overflow */
+    border: 1px solid var(--pink-text-color);
+}
+.marquee{
+    color: var(--pink-text-color);
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+.btn-group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+}
+.btn1 {
+    display: inline-block;
+    width: 40%; /* Make the buttons take the full width of the container */
+    max-width: 300px; /* Optional: Set a max-width to control the button size */
+    padding: 2rem 4rem;
+    background: var(--pink-text-color);
+    box-shadow: 0 0 10px var(--pink-text-color);
+    border-radius: 3rem;
+    font-size: 3rem;
+    color: black;
+    border: transparent;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
